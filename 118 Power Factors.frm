@@ -2,7 +2,7 @@ VERSION 5.00
 Object = "{5E9E78A0-531B-11CF-91F6-C2863C385E30}#1.0#0"; "MSFLXGRD.OCX"
 Begin VB.Form frmPowerFactors 
    Caption         =   "118 DPSS Power & Scale Factors"
-   ClientHeight    =   12345
+   ClientHeight    =   11880
    ClientLeft      =   4530
    ClientTop       =   675
    ClientWidth     =   18435
@@ -10,7 +10,7 @@ Begin VB.Form frmPowerFactors
    ControlBox      =   0   'False
    LinkTopic       =   "Form1"
    PaletteMode     =   1  'UseZOrder
-   ScaleHeight     =   12345
+   ScaleHeight     =   11880
    ScaleWidth      =   18435
    StartUpPosition =   2  'CenterScreen
    Begin VB.CommandButton cmdPlus1 
@@ -2705,7 +2705,6 @@ Begin VB.Form frmPowerFactors
       Width           =   4020
    End
    Begin MSFlexGridLib.MSFlexGrid MSFlexGrid3 
-      Bindings        =   "118 Power Factors.frx":0000
       Height          =   855
       Left            =   7800
       TabIndex        =   46
@@ -2723,7 +2722,6 @@ Begin VB.Form frmPowerFactors
       FormatString    =   "FROM [TBL POWER] WHERE [TBL_ID]"
    End
    Begin MSFlexGridLib.MSFlexGrid MSFlexGrid1 
-      Bindings        =   "118 Power Factors.frx":0014
       Height          =   3735
       Left            =   240
       TabIndex        =   38
@@ -2928,7 +2926,6 @@ Begin VB.Form frmPowerFactors
       BorderStyle     =   1  'Fixed Single
       Height          =   3300
       Left            =   15480
-      Picture         =   "118 Power Factors.frx":0028
       Top             =   5880
       Visible         =   0   'False
       Width           =   4275
@@ -2960,7 +2957,6 @@ Begin VB.Form frmPowerFactors
       BorderStyle     =   1  'Fixed Single
       Height          =   7740
       Left            =   16200
-      Picture         =   "118 Power Factors.frx":2C88A
       Top             =   3120
       Width           =   1980
    End
@@ -3022,7 +3018,6 @@ Begin VB.Form frmPowerFactors
       BorderStyle     =   1  'Fixed Single
       Height          =   660
       Left            =   0
-      Picture         =   "118 Power Factors.frx":3490C
       Top             =   0
       Width           =   4170
    End

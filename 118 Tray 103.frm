@@ -5,7 +5,6 @@ Begin VB.Form frm103
    ClientLeft      =   60
    ClientTop       =   345
    ClientWidth     =   18780
-   Icon            =   "118 Tray 103.frx":0000
    LinkTopic       =   "Form1"
    ScaleHeight     =   11820
    ScaleWidth      =   18780
@@ -2691,7 +2690,6 @@ Begin VB.Form frm103
       BorderStyle     =   1  'Fixed Single
       Height          =   5265
       Left            =   11760
-      Picture         =   "118 Tray 103.frx":0CCA
       Stretch         =   -1  'True
       Top             =   120
       Visible         =   0   'False

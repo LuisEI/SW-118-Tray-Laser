@@ -1,13 +1,12 @@
 VERSION 5.00
 Object = "{5E9E78A0-531B-11CF-91F6-C2863C385E30}#1.0#0"; "MSFLXGRD.OCX"
-Object = "{86CF1D34-0C5F-11D2-A9FC-0000F8754DA1}#2.0#0"; "MSCOMCT2.OCX"
+Object = "{86CF1D34-0C5F-11D2-A9FC-0000F8754DA1}#2.0#0"; "mscomct2.ocx"
 Begin VB.Form frmOPScreen 
    Caption         =   "118  DPSS Tray Production Screen"
    ClientHeight    =   9510
    ClientLeft      =   60
    ClientTop       =   450
    ClientWidth     =   16560
-   Icon            =   "118 OP SCREEN.frx":0000
    LinkTopic       =   "Form1"
    ScaleHeight     =   9510
    ScaleWidth      =   16560
@@ -595,7 +594,7 @@ Begin VB.Form frmOPScreen
             Strikethrough   =   0   'False
          EndProperty
          CustomFormat    =   "h:mm AM/PM"
-         Format          =   52232194
+         Format          =   99352578
          CurrentDate     =   38117
       End
       Begin MSComCtl2.DTPicker DTPicker3 
@@ -618,7 +617,7 @@ Begin VB.Form frmOPScreen
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         Format          =   52232193
+         Format          =   99352577
          CurrentDate     =   38117
       End
       Begin VB.Label Label13 
@@ -956,7 +955,6 @@ Begin VB.Form frmOPScreen
          Width           =   1215
       End
       Begin MSFlexGridLib.MSFlexGrid MSFlexGrid1 
-         Bindings        =   "118 OP SCREEN.frx":0CCA
          Height          =   1215
          Left            =   240
          TabIndex        =   2
@@ -1211,7 +1209,6 @@ Begin VB.Form frmOPScreen
       BorderStyle     =   1  'Fixed Single
       Height          =   660
       Left            =   12360
-      Picture         =   "118 OP SCREEN.frx":0CDE
       Top             =   120
       Width           =   4170
    End

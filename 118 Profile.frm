@@ -6,7 +6,6 @@ Begin VB.Form frmProfile
    ClientLeft      =   -165
    ClientTop       =   105
    ClientWidth     =   14790
-   Icon            =   "118 Profile.frx":0000
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    MinButton       =   0   'False

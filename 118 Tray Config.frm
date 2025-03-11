@@ -2,13 +2,12 @@ VERSION 5.00
 Object = "{5E9E78A0-531B-11CF-91F6-C2863C385E30}#1.0#0"; "MSFLXGRD.OCX"
 Begin VB.Form frmTray 
    Caption         =   "118 Tray Configuration"
-   ClientHeight    =   12135
+   ClientHeight    =   11880
    ClientLeft      =   225
    ClientTop       =   795
    ClientWidth     =   20955
-   Icon            =   "118 Tray Config.frx":0000
    LinkTopic       =   "Form1"
-   ScaleHeight     =   12135
+   ScaleHeight     =   11880
    ScaleWidth      =   20955
    StartUpPosition =   2  'CenterScreen
    Begin VB.TextBox Text22 
@@ -107,7 +106,6 @@ Begin VB.Form frmTray
          Width           =   1815
       End
       Begin MSFlexGridLib.MSFlexGrid MSFlexGrid4 
-         Bindings        =   "118 Tray Config.frx":0CCA
          Height          =   855
          Left            =   240
          TabIndex        =   137
@@ -1708,7 +1706,6 @@ Begin VB.Form frmTray
       Width           =   975
    End
    Begin MSFlexGridLib.MSFlexGrid MSFlexGrid1 
-      Bindings        =   "118 Tray Config.frx":0CDE
       Height          =   855
       Left            =   120
       TabIndex        =   4
@@ -1734,7 +1731,6 @@ Begin VB.Form frmTray
       EndProperty
    End
    Begin MSFlexGridLib.MSFlexGrid MSFlexGrid6 
-      Bindings        =   "118 Tray Config.frx":0CF2
       Height          =   2655
       Left            =   240
       TabIndex        =   31
@@ -2161,7 +2157,6 @@ Begin VB.Form frmTray
       BorderStyle     =   1  'Fixed Single
       Height          =   11145
       Left            =   18240
-      Picture         =   "118 Tray Config.frx":0D06
       Top             =   120
       Width           =   2130
    End

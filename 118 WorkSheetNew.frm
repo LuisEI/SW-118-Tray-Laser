@@ -1,6 +1,6 @@
 VERSION 5.00
-Object = "{5E9E78A0-531B-11CF-91F6-C2863C385E30}#1.0#0"; "Msflxgrd.ocx"
-Object = "{86CF1D34-0C5F-11D2-A9FC-0000F8754DA1}#2.0#0"; "Mscomct2.ocx"
+Object = "{5E9E78A0-531B-11CF-91F6-C2863C385E30}#1.0#0"; "MSFLXGRD.OCX"
+Object = "{86CF1D34-0C5F-11D2-A9FC-0000F8754DA1}#2.0#0"; "mscomct2.ocx"
 Begin VB.Form frmWorkSheet1 
    BorderStyle     =   1  'Fixed Single
    Caption         =   "118 Laser OEE Work Sheet"
@@ -9,7 +9,6 @@ Begin VB.Form frmWorkSheet1
    ClientTop       =   330
    ClientWidth     =   18270
    ControlBox      =   0   'False
-   Icon            =   "118 WorkSheetNew.frx":0000
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    MinButton       =   0   'False
@@ -941,7 +940,7 @@ Begin VB.Form frmWorkSheet1
             Strikethrough   =   0   'False
          EndProperty
          CustomFormat    =   "h:mm AM/PM"
-         Format          =   118292482
+         Format          =   96731138
          CurrentDate     =   38117
       End
       Begin MSComCtl2.DTPicker DTPicker2 
@@ -965,7 +964,7 @@ Begin VB.Form frmWorkSheet1
             Strikethrough   =   0   'False
          EndProperty
          CustomFormat    =   "h:mm AM/PM"
-         Format          =   118292482
+         Format          =   96731138
          CurrentDate     =   38117
       End
       Begin VB.Label lblInfo 
@@ -1179,7 +1178,7 @@ Begin VB.Form frmWorkSheet1
             Strikethrough   =   0   'False
          EndProperty
          CustomFormat    =   "h:mm tt"
-         Format          =   118292481
+         Format          =   98369537
          CurrentDate     =   38117
       End
    End
@@ -1298,7 +1297,6 @@ Begin VB.Form frmWorkSheet1
       Width           =   4140
    End
    Begin MSFlexGridLib.MSFlexGrid MSFlexGrid1 
-      Bindings        =   "118 WorkSheetNew.frx":0CCA
       Height          =   975
       Left            =   4920
       TabIndex        =   5
@@ -1383,7 +1381,6 @@ Begin VB.Form frmWorkSheet1
       Width           =   3900
    End
    Begin MSFlexGridLib.MSFlexGrid MSFlexGrid2 
-      Bindings        =   "118 WorkSheetNew.frx":0CDE
       Height          =   735
       Left            =   5400
       TabIndex        =   6
@@ -1406,7 +1403,6 @@ Begin VB.Form frmWorkSheet1
       EndProperty
    End
    Begin MSFlexGridLib.MSFlexGrid MSFlexGrid3 
-      Bindings        =   "118 WorkSheetNew.frx":0CF2
       Height          =   735
       Left            =   7800
       TabIndex        =   8
@@ -1429,7 +1425,6 @@ Begin VB.Form frmWorkSheet1
       EndProperty
    End
    Begin MSFlexGridLib.MSFlexGrid MSFlexGrid6 
-      Bindings        =   "118 WorkSheetNew.frx":0D06
       Height          =   975
       Left            =   1560
       TabIndex        =   49
@@ -1455,7 +1450,6 @@ Begin VB.Form frmWorkSheet1
       EndProperty
    End
    Begin MSFlexGridLib.MSFlexGrid MSFlexGrid7 
-      Bindings        =   "118 WorkSheetNew.frx":0D1A
       Height          =   975
       Left            =   4920
       TabIndex        =   68
@@ -1483,7 +1477,6 @@ Begin VB.Form frmWorkSheet1
       BorderStyle     =   1  'Fixed Single
       Height          =   2700
       Left            =   12600
-      Picture         =   "118 WorkSheetNew.frx":0D2E
       Top             =   8520
       Width           =   5265
    End
@@ -1586,7 +1579,6 @@ Begin VB.Form frmWorkSheet1
       BorderStyle     =   1  'Fixed Single
       Height          =   660
       Left            =   120
-      Picture         =   "118 WorkSheetNew.frx":2DB30
       Top             =   11400
       Width           =   4170
    End
@@ -2829,23 +2821,23 @@ sSQL = "SELECT [TRAY_ID],[ROWS] &  'x' & [COLS] AS [SQL NAME],[TITLE],[ATC DWG] 
 
 Set FR_Table = FR_Database.OpenRecordset(sSQL)
 
-Dim I As Integer
+Dim i As Integer
 
-For I = 0 To 5
-        lblCode(I).Visible = False
-        cmdCode(I).Visible = False
-Next I
+For i = 0 To 5
+        lblCode(i).Visible = False
+        cmdCode(i).Visible = False
+Next i
 
-I = 0
+i = 0
 If (FR_Table.RecordCount <> 0) Then
     Do Until FR_Table.EOF
-        lblCode(I).Caption = FR_Table.Fields("[TRAY_ID]") + 750
+        lblCode(i).Caption = FR_Table.Fields("[TRAY_ID]") + 750
         sSQL = "[" & FR_Table.Fields("[TRAY_ID]") & "] " & FR_Table.Fields("[SQL NAME]") & " " & FR_Table.Fields("[TITLE]") & " " & FR_Table.Fields("[ATC DWG]")
              
-        cmdCode(I).Caption = sSQL
-        lblCode(I).Visible = True
-        cmdCode(I).Visible = True
-        I = I + 1
+        cmdCode(i).Caption = sSQL
+        lblCode(i).Visible = True
+        cmdCode(i).Visible = True
+        i = i + 1
         FR_Table.MoveNext
     Loop
 End If

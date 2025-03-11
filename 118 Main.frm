@@ -6,7 +6,6 @@ Begin VB.Form frmMain
    ClientLeft      =   60
    ClientTop       =   450
    ClientWidth     =   18810
-   Icon            =   "118 Main.frx":0000
    LinkTopic       =   "Form1"
    PaletteMode     =   1  'UseZOrder
    ScaleHeight     =   11160
@@ -1153,7 +1152,6 @@ Begin VB.Form frmMain
       Width           =   495
    End
    Begin MSFlexGridLib.MSFlexGrid MSFlexGrid1 
-      Bindings        =   "118 Main.frx":0CCA
       Height          =   1935
       Left            =   5160
       TabIndex        =   2
@@ -1180,7 +1178,6 @@ Begin VB.Form frmMain
       EndProperty
    End
    Begin MSFlexGridLib.MSFlexGrid MSFlexGrid2 
-      Bindings        =   "118 Main.frx":0CDE
       Height          =   1095
       Left            =   5160
       TabIndex        =   1
@@ -1239,7 +1236,6 @@ Begin VB.Form frmMain
       Width           =   4815
    End
    Begin MSFlexGridLib.MSFlexGrid MSFlexGrid5 
-      Bindings        =   "118 Main.frx":0CF2
       Height          =   3615
       Left            =   15720
       TabIndex        =   94
@@ -1484,7 +1480,6 @@ Begin VB.Form frmMain
       BorderStyle     =   1  'Fixed Single
       Height          =   660
       Left            =   0
-      Picture         =   "118 Main.frx":0D06
       Top             =   120
       Width           =   4170
    End

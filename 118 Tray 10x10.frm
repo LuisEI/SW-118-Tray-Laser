@@ -5,7 +5,6 @@ Begin VB.Form frm10x10
    ClientLeft      =   60
    ClientTop       =   345
    ClientWidth     =   18765
-   Icon            =   "118 Tray 10x10.frx":0000
    LinkTopic       =   "Form1"
    ScaleHeight     =   11820
    ScaleWidth      =   18765
@@ -4163,18 +4162,18 @@ End Sub
 Private Sub cmdColumn_Click(Index As Integer)
 
 Dim Y As Integer
-Dim I As Integer
+Dim i As Integer
  
 For Y = 0 To 9
      Select Case Index
      Case 0
                 If (cmdMatrix(Y).Caption <> "") Then
-                    For I = 0 To 9
-                        If cmdMatrix(I * 10 + Y).Enabled = True Then
-                            cmdMatrix(I * 10 + Y).Caption = I * 10 + Y
-                            cmdMatrix(I * 10 + Y).BackColor = &HC0FFFF
+                    For i = 0 To 9
+                        If cmdMatrix(i * 10 + Y).Enabled = True Then
+                            cmdMatrix(i * 10 + Y).Caption = i * 10 + Y
+                            cmdMatrix(i * 10 + Y).BackColor = &HC0FFFF
                         End If
-                    Next I
+                    Next i
                 End If
      End Select
 Next Y
@@ -4376,7 +4375,7 @@ Private Sub cmdFire_Click()
     End If
                 
     '*********** PRODUCTION MODE
-    Dim I As Integer
+    Dim i As Integer
 
     If (OptionAll.value = True) Then
         '
@@ -4705,17 +4704,17 @@ End Sub
 Private Sub cmdRow_Click(Index As Integer)
 
 Dim Y As Integer, k As Integer
-Dim I As Integer
+Dim i As Integer
  
 For Y = 0 To 9
      k = (10 * Y)
      Select Case Index
      Case 0
                 If (cmdMatrix(k).Caption <> "") Then
-                    For I = 0 To 9
-                         cmdMatrix(I + k).Caption = I + k
-                         cmdMatrix(I + k).BackColor = &HC0FFFF
-                    Next I
+                    For i = 0 To 9
+                         cmdMatrix(i + k).Caption = i + k
+                         cmdMatrix(i + k).BackColor = &HC0FFFF
+                    Next i
                 End If
    
      End Select

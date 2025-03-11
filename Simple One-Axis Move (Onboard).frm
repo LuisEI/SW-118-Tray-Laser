@@ -5,7 +5,6 @@ Begin VB.Form frmMotion
    ClientLeft      =   225
    ClientTop       =   795
    ClientWidth     =   16620
-   Icon            =   "Simple One-Axis Move (Onboard).frx":0000
    LinkTopic       =   "Form1"
    ScaleHeight     =   10050
    ScaleWidth      =   16620
@@ -1132,9 +1131,7 @@ Begin VB.Form frmMotion
       EndProperty
       Height          =   360
       Index           =   1
-      ItemData        =   "Simple One-Axis Move (Onboard).frx":0CCA
       Left            =   1080
-      List            =   "Simple One-Axis Move (Onboard).frx":0CD7
       Style           =   2  'Dropdown List
       TabIndex        =   13
       Top             =   3720
@@ -1224,7 +1221,6 @@ Begin VB.Form frmMotion
       BorderStyle     =   1  'Fixed Single
       Height          =   4110
       Left            =   14400
-      Picture         =   "Simple One-Axis Move (Onboard).frx":0CF3
       Top             =   120
       Width           =   1920
    End
@@ -1477,7 +1473,6 @@ Begin VB.Form frmMotion
       Width           =   1605
    End
    Begin VB.Label Label3 
-      Caption         =   $"Simple One-Axis Move (Onboard).frx":50F5
       BeginProperty Font 
          Name            =   "MS Sans Serif"
          Size            =   9.75

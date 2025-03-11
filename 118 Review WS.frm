@@ -1,13 +1,12 @@
 VERSION 5.00
-Object = "{5E9E78A0-531B-11CF-91F6-C2863C385E30}#1.0#0"; "msflxgrd.ocx"
-Object = "{86CF1D34-0C5F-11D2-A9FC-0000F8754DA1}#2.0#0"; "MSCOMCT2.OCX"
+Object = "{5E9E78A0-531B-11CF-91F6-C2863C385E30}#1.0#0"; "MSFLXGRD.OCX"
+Object = "{86CF1D34-0C5F-11D2-A9FC-0000F8754DA1}#2.0#0"; "mscomct2.ocx"
 Begin VB.Form frmReviewWS 
    Caption         =   "118 Review Work Sheets"
    ClientHeight    =   10590
    ClientLeft      =   60
    ClientTop       =   345
    ClientWidth     =   15600
-   Icon            =   "118 Review WS.frx":0000
    LinkTopic       =   "Form1"
    ScaleHeight     =   10590
    ScaleWidth      =   15600
@@ -357,7 +356,7 @@ Begin VB.Form frmReviewWS
             Strikethrough   =   0   'False
          EndProperty
          CustomFormat    =   "h:mm tt"
-         Format          =   52953089
+         Format          =   92995585
          CurrentDate     =   38117
       End
       Begin MSComCtl2.DTPicker DTPicker2 
@@ -379,7 +378,7 @@ Begin VB.Form frmReviewWS
             Strikethrough   =   0   'False
          EndProperty
          CustomFormat    =   "h:mm tt"
-         Format          =   52953089
+         Format          =   92995585
          CurrentDate     =   38117
       End
    End
@@ -401,7 +400,6 @@ Begin VB.Form frmReviewWS
       Width           =   5580
    End
    Begin MSFlexGridLib.MSFlexGrid MSFlexGrid2 
-      Bindings        =   "118 Review WS.frx":0CCA
       Height          =   1095
       Left            =   3960
       TabIndex        =   0
@@ -429,7 +427,6 @@ Begin VB.Form frmReviewWS
       BorderStyle     =   1  'Fixed Single
       Height          =   660
       Left            =   0
-      Picture         =   "118 Review WS.frx":0CDE
       Stretch         =   -1  'True
       Top             =   0
       Width           =   3690
@@ -666,7 +663,7 @@ sSQL = "SELECT * FROM [BARCODE] WHERE [OP_ID]=" & OP_ID
        
 Set FR_Table = FR_Database.OpenRecordset(sSQL)
 If (FR_Table.RecordCount <> 0) Then
-    OPERATOR = FR_Table.Fields("[FIRST]") & " " & FR_Table.Fields("[LAST]")
+    Operator = FR_Table.Fields("[FIRST]") & " " & FR_Table.Fields("[LAST]")
     SHIFT_ID = FR_Table.Fields("[SHIFT_ID]")
 End If
 FR_Table.Close

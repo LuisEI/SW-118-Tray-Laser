@@ -1,5 +1,5 @@
 VERSION 5.00
-Object = "{5E9E78A0-531B-11CF-91F6-C2863C385E30}#1.0#0"; "msflxgrd.ocx"
+Object = "{5E9E78A0-531B-11CF-91F6-C2863C385E30}#1.0#0"; "MSFLXGRD.OCX"
 Begin VB.Form frmConfiguration 
    BorderStyle     =   1  'Fixed Single
    Caption         =   "118 Configuration Tray Laser"
@@ -7,7 +7,6 @@ Begin VB.Form frmConfiguration
    ClientLeft      =   45
    ClientTop       =   330
    ClientWidth     =   18600
-   Icon            =   "118 Configuration.frx":0000
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    MinButton       =   0   'False
@@ -651,7 +650,6 @@ Begin VB.Form frmConfiguration
       Width           =   615
    End
    Begin MSFlexGridLib.MSFlexGrid MSFlexGrid6 
-      Bindings        =   "118 Configuration.frx":0CCA
       Height          =   7215
       Left            =   120
       TabIndex        =   43
@@ -677,7 +675,6 @@ Begin VB.Form frmConfiguration
       EndProperty
    End
    Begin MSFlexGridLib.MSFlexGrid MSFlexGrid1 
-      Bindings        =   "118 Configuration.frx":0CDE
       Height          =   3975
       Left            =   14880
       TabIndex        =   63
@@ -1098,7 +1095,6 @@ Begin VB.Form frmConfiguration
       BorderStyle     =   1  'Fixed Single
       Height          =   660
       Left            =   0
-      Picture         =   "118 Configuration.frx":0CF2
       Top             =   0
       Width           =   4170
    End
